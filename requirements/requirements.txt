@@ -1,0 +1,9 @@
+python ~>3.8
+setuptools-rust
+openai-whisper
+git+https://github.com/openai/whisper.git
+ffmpeg
+tiktoken
+tokenizers
+torch
+transformers
