@@ -7,3 +7,4 @@ tiktoken
 tokenizers
 torch
 transformers
+google-cloud-aiplatform

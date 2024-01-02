@@ -1,6 +1,5 @@
 from transformers import pipeline, BartTokenizer
 
-
 # def read_file(FILE_PATH):
 #     with open(FILE_PATH, "r") as f:
 #         res = f.read()
