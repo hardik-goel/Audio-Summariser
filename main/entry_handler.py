@@ -1,6 +1,6 @@
 from config.conf import AUD_FILE_PATH, API_KEY, MODEL_NAME
 from utilities.audio_text import run_model
-from utilities.sentiment_analyser import analyze_sentiment
+from utilities.sentiment_analyser import analyze_sentiment, display_word_sentiment
 from utilities.text_summariser import sentence_summariser, initialise_model
 import warnings
 
@@ -16,4 +16,6 @@ summary = sentence_summariser(contents,model)
 print ("Text summarised successfully")
 sentiment = analyze_sentiment(summary)
 print ("Sentiment analysis completed")
+display_word_sentiment(summary)
+print ("WordClouds and top 5 words with their sentiment completed successfully")
 
