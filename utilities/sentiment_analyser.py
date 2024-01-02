@@ -4,6 +4,7 @@ from nltk.corpus import stopwords
 from nltk.tokenize import word_tokenize
 from wordcloud import WordCloud
 import matplotlib.pyplot as plt
+import string
 
 nltk.download('vader_lexicon')
 nltk.download('stopwords')
@@ -24,7 +25,8 @@ def preprocess_text(summary):
     # Remove stopwords
     stop_words = set(stopwords.words('english'))
     word_tokens = word_tokenize(summary)
-    filtered_text = [word for word in word_tokens if word.lower() not in stop_words]
+    punctuation = set(string.punctuation)   # will fix punctuation and provide a cleaner result
+    filtered_text = [word for word in word_tokens if word.lower() not in stop_words and word.lower() not in punctuation]
     preprocess_text = ' '.join(filtered_text)
     return preprocess_text
 
@@ -43,6 +45,7 @@ def analyze_sentiment(summary):
         sentiment = 'Negative'
     else:
         sentiment = 'Neutral'
+    print (f"The overall sentiment is : {sentiment}")
     return sentiment
 
 
@@ -66,10 +69,10 @@ def display_word_sentiment(summary):
     top_words = sorted(word_counts.items(), key=lambda x: x[1], reverse=True)[:5]
 
     # Display the top 5 words with their sentiment
-    print("\nTop 5 Words with Sentiment:")
+    print("\nTop words along with Sentiment:")
     for word, count in top_words:
         sentiment = word_sentiments[word]
-        print(f"{word}: {count} occurrences, Sentiment: {sentiment}")
+        print(f"{word}: {count} occurrence/s, Sentiment: {sentiment}")
 
 
 
