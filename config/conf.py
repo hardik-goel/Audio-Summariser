@@ -8,5 +8,6 @@ AUD_FILE_PATH = "/Users/hardikgoel/Downloads/trials/sentence_summary/sample_orde
 # FILE_PATH = "/Users/hardikgoel/Downloads/trials/sentence_summary/new/sample_text_limitation.txt"
 # FILE_PATH = "resources/sample_text_orders.txt"
 
-MODEL_NAME = "facebook/bart-large-cnn"
+MODEL_NAME = "gemini-pro"
+API_KEY = "<YOUR API KEY>"
 
