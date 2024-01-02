@@ -9,3 +9,6 @@ torch
 transformers
 google-cloud-aiplatform
 google-generativeai
+nltk
+wordcloud
+matplotlib

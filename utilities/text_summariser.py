@@ -16,7 +16,7 @@ def initialise_model(API_KEY,MODEL_NAME):
 
 
 def sentence_summariser(CONTENT, MODEL):
-    print("\nStarting Sentence Summary\n")
+    print("\nStarting Sentence Summary")
     text_prompt = CONTENT + "\n Summarise this text."
     responses = MODEL.generate_content(text_prompt)
     responses.prompt_feedback  # To validate whether it complies with safety norms
