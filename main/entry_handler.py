@@ -1,5 +1,6 @@
 from config.conf import AUD_FILE_PATH, API_KEY, MODEL_NAME
 from utilities.audio_text import run_model
+from utilities.sentiment_analyser import analyze_sentiment
 from utilities.text_summariser import sentence_summariser, initialise_model
 import warnings
 
@@ -13,4 +14,6 @@ print("Audio to text completed")
 model = initialise_model(API_KEY,MODEL_NAME)
 summary = sentence_summariser(contents,model)
 print ("Text summarised successfully")
+sentiment = analyze_sentiment(summary)
+print ("Sentiment analysis completed")
 
