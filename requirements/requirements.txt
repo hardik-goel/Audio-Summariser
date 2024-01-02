@@ -12,3 +12,5 @@ google-generativeai
 nltk
 wordcloud
 matplotlib
+streamlit
+pydub
