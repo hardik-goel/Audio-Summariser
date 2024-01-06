@@ -1,6 +1,5 @@
 import streamlit as st
 import sys
-
 import torch
 
 CONTENT_ROOT_PATH = '/Users/hardikgoel/Downloads/github/AudioSummariser'
@@ -26,18 +25,27 @@ def main():
     st.title("Audio Summarisation App")
 
     uploaded_file = st.file_uploader("Choose an audio file", type=["wav", "mp3"])
+    # uploaded_file = "/Users/hardikgoel/Downloads/github/AudioSummariser/resources/sample_order_recording.wav"
 
     if uploaded_file is not None:
         st.audio(uploaded_file, format="audio/wav", start_time=0)
 
         # Convert the audio content to a NumPy array as streamlit returns an uploadedFile object
         audio_np = preprocess_audio(uploaded_file)
+        # Add a "Convert" button
+        if st.button("Convert"):
+            if audio_np is not None:
+                # Run the model and display the result
+                result = aud_text(audio_np)
+                st.subheader("Transcription Result:")
+                st.text(result)
+            else:
+                st.warning("Please upload an audio file before converting.")
 
-        # Run the model and display the result
-        result = aud_text(audio_np)
-        st.subheader("Transcription Result:")
-        st.text(result)
 
 
 if __name__ == "__main__":
     main()
+
+#The command to run :
+# streamlit run app.py

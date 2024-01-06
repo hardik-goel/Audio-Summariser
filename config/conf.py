@@ -11,3 +11,5 @@
 MODEL_NAME = "gemini-pro"
 # API_KEY = "<YOUR API KEY>"
 
+
+
