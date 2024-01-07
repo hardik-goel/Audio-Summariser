@@ -18,6 +18,6 @@ print ("Sentiment analysis started")
 sentiment = analyze_sentiment(summary)
 print ("\nSentiment analysis completed")
 print ("\nWord Sentiment started")
-display_word_sentiment(sentiment)
+display_word_sentiment(summary)
 print ("\nWordClouds and top 5 words with their sentiment completed successfully")
 
