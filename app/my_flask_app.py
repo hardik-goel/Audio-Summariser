@@ -1,11 +1,15 @@
 from flask import Flask, render_template, request
 import os
+from config.conf import UPLOAD_FOLDER
+from main.entry_handler import aud_text, sentiment_trigger
 
 app = Flask(__name__)
 
-UPLOAD_FOLDER = 'uploads'
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 
+def trigger_summariser_sentiment_analyser(file_path):
+    summary = aud_text(file_path)
+    sentiment_trigger(summary)
 
 @app.route('/', methods=['GET', 'POST'])
 def upload_file():
@@ -23,11 +27,11 @@ def upload_file():
         # Save the uploaded file to the uploads folder
         file_path = os.path.join(app.config['UPLOAD_FOLDER'], file.filename)
         file.save(file_path)
-
+        trigger_summariser_sentiment_analyser(file_path)
         return render_template('index.html', message=f'File successfully uploaded. Path: {file_path}')
-
     return render_template('index.html', message='')
 
 
 if __name__ == '__main__':
     app.run(debug=True)
+
