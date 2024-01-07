@@ -16,7 +16,7 @@ def main():
     # uploaded_file = "/Users/hardikgoel/Downloads/github/AudioSummariser/resources/sample_order_recording.wav"
 
     if uploaded_file is not None:
-        path_try = st.audio(uploaded_file, format="audio/wav", start_time=0)
+        st.audio(uploaded_file, format="audio/wav", start_time=0)
         print (f"uploaded_file::{uploaded_file}")
         # Convert the audio content to a NumPy array as streamlit returns an uploadedFile object
         audio_np = preprocess_audio(uploaded_file)
@@ -26,7 +26,9 @@ def main():
                 # Run the model and display the result
                 #audio_np is giving tensor values
                 print(f"uploaded_file.name::{uploaded_file.name}")
-                result = aud_text(uploaded_file.name)
+                print(f"uploaded_file.file_id::{uploaded_file.file_id}")
+                #Leaving it here as not sure from where would be getting the path which would be supplied here
+                result = aud_text(uploaded_file.file_id)
                 st.subheader("Transcription Result:")
                 st.text(result)
             else:
