@@ -12,3 +12,4 @@ google-generativeai
 nltk
 wordcloud
 matplotlib
+gradio
