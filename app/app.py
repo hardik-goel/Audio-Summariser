@@ -1,5 +1,6 @@
-import streamlit as st
 import sys
+
+import streamlit as st
 import torch
 
 CONTENT_ROOT_PATH = '/Users/hardikgoel/Downloads/github/AudioSummariser'
@@ -7,6 +8,29 @@ sys.path.append(CONTENT_ROOT_PATH)
 from main.entry_handler import aud_text
 from pydub import AudioSegment
 import numpy as np
+
+def main():
+    st.title("Audio Summarisation App")
+
+    uploaded_file = st.file_uploader("Choose an audio file", type=["wav", "mp3"])
+    # uploaded_file = "/Users/hardikgoel/Downloads/github/AudioSummariser/resources/sample_order_recording.wav"
+
+    if uploaded_file is not None:
+        path_try = st.audio(uploaded_file, format="audio/wav", start_time=0)
+        print (f"uploaded_file::{uploaded_file}")
+        # Convert the audio content to a NumPy array as streamlit returns an uploadedFile object
+        audio_np = preprocess_audio(uploaded_file)
+        # Add a "Convert" button
+        if st.button("Convert"):
+            if audio_np is not None:
+                # Run the model and display the result
+                #audio_np is giving tensor values
+                print(f"uploaded_file.name::{uploaded_file.name}")
+                result = aud_text(uploaded_file.name)
+                st.subheader("Transcription Result:")
+                st.text(result)
+            else:
+                st.warning("Please upload an audio file before converting.")
 
 def preprocess_audio(uploaded_file):
     if uploaded_file is not None:
@@ -20,27 +44,6 @@ def preprocess_audio(uploaded_file):
         return audio_tensor
     else:
         return None
-
-def main():
-    st.title("Audio Summarisation App")
-
-    uploaded_file = st.file_uploader("Choose an audio file", type=["wav", "mp3"])
-    # uploaded_file = "/Users/hardikgoel/Downloads/github/AudioSummariser/resources/sample_order_recording.wav"
-
-    if uploaded_file is not None:
-        st.audio(uploaded_file, format="audio/wav", start_time=0)
-
-        # Convert the audio content to a NumPy array as streamlit returns an uploadedFile object
-        audio_np = preprocess_audio(uploaded_file)
-        # Add a "Convert" button
-        if st.button("Convert"):
-            if audio_np is not None:
-                # Run the model and display the result
-                result = aud_text(audio_np)
-                st.subheader("Transcription Result:")
-                st.text(result)
-            else:
-                st.warning("Please upload an audio file before converting.")
 
 
 
