@@ -7,9 +7,6 @@ app = Flask(__name__)
 
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 
-def trigger_summariser_sentiment_analyser(file_path):
-    summary = aud_text(file_path)
-    sentiment_trigger(summary)
 
 @app.route('/', methods=['GET', 'POST'])
 def upload_file():
@@ -27,11 +24,23 @@ def upload_file():
         # Save the uploaded file to the uploads folder
         file_path = os.path.join(app.config['UPLOAD_FOLDER'], file.filename)
         file.save(file_path)
-        trigger_summariser_sentiment_analyser(file_path)
+
         return render_template('index.html', message=f'File successfully uploaded. Path: {file_path}')
     return render_template('index.html', message='')
+
+@app.route('/summarise', methods=['POST'])
+def summarise_file():
+    # Assuming the uploaded file path is stored in a session variable or another way
+    file_path = upload_file()  # Replace with the actual path
+    print (f"file_path::{file_path}")
+    if os.path.exists(file_path):
+        # Perform audio summarization using aud_text function
+        result = aud_text(file_path)
+        return render_template('index.html', message=f'Summarized Text: {result}')
+    else:
+        return render_template('index.html', message='No uploaded file to summarize')
+
 
 
 if __name__ == '__main__':
     app.run(debug=True)
-

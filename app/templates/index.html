@@ -1,8 +1,27 @@
 <!doctype html>
-<title>Audio File Uploader</title>
-<h1>Upload an Audio File</h1>
-<form method=post enctype=multipart/form-data>
-  <input type=file name=file>
-  <input type=submit value=Upload>
-</form>
-<p>{{ message }}</p>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Audio File Uploader</title>
+</head>
+<body>
+    <h1>Upload an Audio File</h1>
+
+    <!-- File Upload Form -->
+    <form method="post" enctype="multipart/form-data">
+        <input type="file" name="file">
+        <input type="submit" value="Upload">
+    </form>
+
+    <!-- Display the upload message -->
+    <p>{{ message }}</p>
+
+    <!-- Summarise Button Form -->
+    <form action="/summarise" method="post">
+        <input type="submit" value="Summarise">
+    </form>
+
+    <!-- Display the summarization result -->
+    <p>{{ summarization_result }}</p>
+</body>
+</html>
