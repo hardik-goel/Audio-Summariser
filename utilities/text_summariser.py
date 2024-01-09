@@ -19,7 +19,6 @@ def sentence_summariser(CONTENT, MODEL):
     print("\nStarting Sentence Summary")
     text_prompt = CONTENT + "\n Summarise this text."
     responses = MODEL.generate_content(text_prompt)
-    responses.prompt_feedback  # To validate whether it complies with safety norms
     for response in responses:
         summary = response.text
         print(summary, end="")
