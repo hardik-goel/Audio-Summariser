@@ -13,3 +13,5 @@ matplotlib
 streamlit
 pydub
 watchdog
+googleapiclient
+google-api-python-client
