@@ -54,7 +54,15 @@ def display_word_sentiment(summary):
     word_tokens, word_sentiments = tokenisation_sentiment_analysis_wordwise(summary)
     word_counts = {word: word_tokens.count(word) for word in set(word_tokens)}
     top_words = sorted(word_counts.items(), key=lambda x: x[1], reverse=True)[:5]
+
+    # Lists for graphs
+    words = [word[0] for word in top_words]
+    counts = [word_counts[word] for word in words]
+    sentiments = [word_sentiments.get(word, 'Unknown') for word in words]
+
     print("\nTop words along with Sentiment:")
     for word, count in top_words:
         sentiment_for_word = word_sentiments.get(word, 'Unknown')
         print(f"{word}: {count} occurrence/s, Sentiment: {sentiment_for_word}")
+
+    return words, counts, sentiments
