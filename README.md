@@ -55,6 +55,11 @@ Watch a brief demo of the project:
 3. **Usage:**
     - Run the application and upload your audio file.
     - Explore the generated summaries, sentiment analysis, and visualizations.
+   
+4. **Models:**
+    - OpenAI's whisper for Audio to Text Conversion
+    - Gemini-Pro for Text Summarisation.
+      [Tried GPT, Bart-cnn, bart-base but the accuracy received is most in gemini-pro]
 
 
 ## Screenshots
