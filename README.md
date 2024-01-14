@@ -4,6 +4,12 @@
 
 The Customer Echo Ease utility is designed to fast-track the Time-To-Resolution (TAT) for customer care executives and support teams. By processing monologue/dialogue-based audio files (typically customer requests, complaints, or feedback) in WAV or MP3 format, this utility provides valuable insights to enhance customer support operations.
 
+
+<video width="320" height="240" controls>
+  <source src="resources/ScreenRecord.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
 ## Features
 
 1. **Text Summarization:** Quickly generates a summarized text from audio files, enabling faster Call-to-Action (CTA) and issue resolution.
@@ -20,6 +26,7 @@ The Customer Echo Ease utility is designed to fast-track the Time-To-Resolution 
 
 7. **Overall Sentiment Pie Chart:** Represents the overall sentiment distribution of the conversation in the form of a pie chart.
 
+
 ## How It Works
 
 1. **Audio Input:** Upload the audio file in WAV or MP3 format containing customer interactions.
@@ -31,6 +38,7 @@ The Customer Echo Ease utility is designed to fast-track the Time-To-Resolution 
 4. **Word Clouds:** Creates visually appealing word clouds depicting the most used words in the conversation.
 
 5. **Graphs and Charts:** Displays bar graphs for the top 5 most used words and a pie chart for overall sentiment distribution.
+
 
 ## Getting Started
 
@@ -46,6 +54,7 @@ The Customer Echo Ease utility is designed to fast-track the Time-To-Resolution 
 3. **Usage:**
     - Run the application and upload your audio file.
     - Explore the generated summaries, sentiment analysis, and visualizations.
+
 
 ## Screenshots
 

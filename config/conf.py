@@ -10,4 +10,4 @@ AUD_FILE_PATH = "/Users/hardikgoel/Downloads/github/AudioSummariser/resources/Cu
 # FILE_PATH = "resources/sample_text_orders.txt"
 MODEL_NAME = "gemini-pro"
 # API_KEY = "<YOUR API KEY>"
-API_KEY = "AIzaSyBeSb1hTqxFr6bPjVYINc-_nJit2OKwRRQ"
+
