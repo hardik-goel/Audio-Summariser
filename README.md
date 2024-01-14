@@ -4,11 +4,12 @@
 
 The Customer Echo Ease utility is designed to fast-track the Time-To-Resolution (TAT) for customer care executives and support teams. By processing monologue/dialogue-based audio files (typically customer requests, complaints, or feedback) in WAV or MP3 format, this utility provides valuable insights to enhance customer support operations.
 
+## Project Demo
 
-<video width="320" height="240" controls>
-  <source src="resources/ScreenRecord.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+Watch a brief demo of the project:
+
+[![Project Demo](http://img.youtube.com/vi/3sXMmNe41uk/0.jpg)](http://www.youtube.com/watch?v=3sXMmNe41uk)
+
 
 ## Features
 
