@@ -1,5 +1,6 @@
 from config.conf import AUD_FILE_PATH, API_KEY, MODEL_NAME
 from utilities.audio_text import run_model
+from utilities.chart_creation import graph_formation
 from utilities.sentiment_analyser import analyze_sentiment, display_word_sentiment
 from utilities.text_summariser import sentence_summariser, initialise_model
 import warnings
@@ -18,6 +19,8 @@ print ("Sentiment analysis started")
 sentiment = analyze_sentiment(summary)
 print ("\nSentiment analysis completed")
 print ("\nWord Sentiment started")
-display_word_sentiment(summary)
+words, counts, sentiments = display_word_sentiment(summary)
+print ("Graph formation started")
+graph_formation(words, counts, sentiments)
 print ("\nWordClouds and top 5 words with their sentiment completed successfully")
 
