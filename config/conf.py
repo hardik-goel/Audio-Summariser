@@ -10,8 +10,7 @@
 # FILE_PATH = "resources/sample_text_orders.txt"
 MODEL_NAME = "gemini-pro"
 # API_KEY = "<YOUR API KEY>"
-API_KEY = "AIzaSyBeSb1hTqxFr6bPjVYINc-_nJit2OKwRRQ"
-GOOGLE_DRIVE_KEY = '/Users/hardikgoel/Downloads/github/JIRA-from-google-sheets/key.json'
-
+# GOOGLE_DRIVE_KEY_PATH = <GOOGLE_DRIVE_KEY_PATH>
+# google_drive_folder_id = <google_drive_folder_id>
 
 
