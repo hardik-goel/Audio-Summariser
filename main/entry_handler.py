@@ -20,7 +20,7 @@ sentiment = analyze_sentiment(summary)
 print ("\nSentiment analysis completed")
 print ("\nWord Sentiment started")
 words, counts, sentiments = display_word_sentiment(summary)
-print ("Graph formation started")
+print ("\nGraph formation started")
 graph_formation(words, counts, sentiments)
 print ("\nWordClouds and top 5 words with their sentiment completed successfully")
 
