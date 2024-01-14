@@ -17,8 +17,7 @@ def generate_wordcloud(word_counts):
     plt.figure(figsize=(10, 5))
     plt.imshow(wordcloud, interpolation='bilinear')
     plt.axis('off')
-    plt.show(block=False)
-    plt.pause(0.2)
+    plt.show()
 
 
 def preprocess_text(summary):
