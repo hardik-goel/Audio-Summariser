@@ -2,7 +2,7 @@ setuptools-rust
 openai-whisper
 ffmpeg
 tokenizers
-torch
+torch==1.9.0
 transformers
 google-cloud-aiplatform
 google-generativeai
