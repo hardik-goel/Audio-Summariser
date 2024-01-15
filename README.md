@@ -10,6 +10,9 @@ Watch a brief demo of the project:
 
 [![Project Demo](http://img.youtube.com/vi/3sXMmNe41uk/0.jpg)](http://www.youtube.com/watch?v=3sXMmNe41uk)
 
+You can also find at : 
+
+https://pypi.org/project/AudioSummariser/
 
 ## Features
 
