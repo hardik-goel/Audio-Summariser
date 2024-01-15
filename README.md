@@ -2,7 +2,7 @@
 
 ## Overview
 
-The Customer Echo Ease utility is designed to fast-track the Time-To-Resolution (TAT) for customer care executives and support teams. By processing monologue/dialogue-based audio files (typically customer requests, complaints, or feedback) in WAV or MP3 format, this utility provides valuable insights to enhance customer support operations.
+The Customer Echo Ease utility (A Generative AI based utility) is designed to fast-track the Time-To-Resolution (TAT) for customer care executives and support teams. By processing monologue/dialogue-based audio files (typically customer requests, complaints, or feedback) in WAV or MP3 format, this utility provides valuable insights to enhance customer support operations.
 
 ## Project Demo
 
@@ -75,6 +75,11 @@ Watch a brief demo of the project:
 ![Top 5 Words Bar Graph](docs/images/top_words_bar_graph.png)
 
 ![Overall Sentiment Pie Chart](docs/images/sentiment_pie_chart.png)
+
+Note - For some of the systems, installing Openai's whisper directly might not work.
+Use :        
+
+      "git+https://github.com/openai/whisper.git"
 
 ## Acknowledgments
 
