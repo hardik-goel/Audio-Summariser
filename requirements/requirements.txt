@@ -1,7 +1,6 @@
 setuptools-rust
 openai-whisper
 ffmpeg
-tiktoken
 tokenizers
 torch
 transformers
