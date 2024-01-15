@@ -1,12 +1,20 @@
 # CustomerEchoEase
 
+## Problem Statement
+
+Customer Support Executives often spend substantial time summarizing and documenting customer interactions post calls, adding an extra burden to their workflow. After each call, they manually input the customer's concerns into systems for further analysis by support teams and managers.
+
+## Aim:
+Consider an executive who spends 15 minutes summarizing each of the 8 calls they attend daily. This totals an additional 2 hours spent on summarization, time that could have been used to handle 2-3 more customer requests. The aim of CustomerEchoEase is to enhance customer support efficiency, freeing up valuable time for executives to focus on tasks that truly matter.
+
+
 ## Overview
 
 The Customer Echo Ease utility (A Generative AI based utility) is designed to fast-track the Time-To-Resolution (TAT) for customer care executives and support teams. By processing monologue/dialogue-based audio files (typically customer requests, complaints, or feedback) in WAV or MP3 format, this utility provides valuable insights to enhance customer support operations.
 
 ## Project Demo
 
-Watch a brief demo of the project:
+Watch a brief demo of the project for a quick glimpse:
 
 [![Project Demo](http://img.youtube.com/vi/3sXMmNe41uk/0.jpg)](http://www.youtube.com/watch?v=3sXMmNe41uk)
 
@@ -52,8 +60,13 @@ https://pypi.org/project/AudioSummariser/
 
 2. **Installation:**
     ```bash
-    pip install -r requirements.txt
+    pip install -r requirements/requirements.txt
     ```
+   You can also use :
+
+   ```
+   pip install AudioSummariser==0.1.0
+   ```
 
 3. **Usage:**
     - Run the application and upload your audio file.
