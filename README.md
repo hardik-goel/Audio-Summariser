@@ -14,7 +14,7 @@ The Customer Echo Ease utility (A Generative AI based utility) is designed to fa
 
 ## Project Demo
 
-Watch a brief demo of the project for a quick glimpse:
+Watch a brief [demo](http://www.youtube.com/watch?v=3sXMmNe41uk) of the project for a quick glimpse:
 
 [![Project Demo](http://img.youtube.com/vi/3sXMmNe41uk/0.jpg)](http://www.youtube.com/watch?v=3sXMmNe41uk)
 
