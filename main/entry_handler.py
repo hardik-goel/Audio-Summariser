@@ -1,12 +1,15 @@
-from config.conf import AUD_FILE_PATH, API_KEY, MODEL_NAME
+from config.conf import API_KEY, MODEL_NAME
 from utilities.audio_text import run_model
 from utilities.chart_creation import graph_formation
+from utilities.file_reads import fetch_audio_files
 from utilities.sentiment_analyser import analyze_sentiment, display_word_sentiment
 from utilities.text_summariser import sentence_summariser, initialise_model
 import warnings
 
 # Suppress the specific warning
 warnings.filterwarnings("ignore", message="FP16 is not supported on CPU; using FP32 instead")
+print ("Fetching audio files...")
+AUD_FILE_PATH = fetch_audio_files()
 print ("Entry Handler started...")
 contents = run_model(AUD_FILE_PATH)
 print (contents)
