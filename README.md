@@ -54,11 +54,40 @@ https://pypi.org/project/AudioSummariser/
 
 ## Getting Started
 
-1. **Prerequisites:**
-    - Ensure you have the necessary Python libraries installed (requirements.txt).
-    - Set up Google Drive API credentials for file uploading.
+1. Fork the repository [here](https://github.com/hardik-goel/Audio-Summariser/fork)
 
-2. **Installation:**
+
+2. Clone the forked repository:
+   ```
+   git clone https://github.com/<YOUR-USERNAME>/Audio-Summariser.git
+   cd Audio-Summariser
+   ```
+   
+3. Create a Python Virtual Environment:
+   
+
+   - Using [virtualenv](https://learnpython.com/blog/how-to-use-virtualenv-python/):
+     
+      Note: Check how to install virtualenv on your system [here](https://learnpython.com/blog/how-to-use-virtualenv-python/)
+
+      OR
+
+   - Create a Python Virtual Environment:
+   ```
+   python -m venv env
+   ```
+4. Activate the Virtual Environment.
+
+   - On Windows:
+      ```
+     env\Scripts\activate
+     ```
+   - On macOS and Linux:
+     ```
+     source env/bin/activate
+     ```
+   
+5. **Install Dependencies:**
     ```bash
     pip install -r requirements/requirements.txt
     ```
@@ -67,12 +96,19 @@ https://pypi.org/project/AudioSummariser/
    ```
    pip install AudioSummariser==0.1.0
    ```
-
-3. **Usage:**
-    - Run the application and upload your audio file.
-    - Explore the generated summaries, sentiment analysis, and visualizations.
    
-4. **Models:**
+6. **Prepare Data:**
+    Place your .wav/.mp3 files under `data/` folder.
+    Please ensure that no other file is kept under `data/` folder.
+   
+
+7. **Usage:**
+    ```
+    python main/entry_handler.py
+    ```
+   
+    **Models used:**
+   
     - OpenAI's whisper for Audio to Text Conversion
     - Gemini-Pro for Text Summarisation.
       [Tried GPT, Bart-cnn, bart-base but the accuracy received is most in gemini-pro]
