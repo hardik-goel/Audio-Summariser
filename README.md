@@ -133,10 +133,25 @@ Use :
 
       "git+https://github.com/openai/whisper.git"
 
-## Acknowledgments
 
-- This project was developed to improve the efficiency of customer support teams by HardikGoel.
+### Contributor:
 
-Feel free to contribute or report issues!
+- This project was developed to improve the efficiency of customer support teams by [Hardik Goel](https://www.linkedin.com/in/hardik-goel-a6334936/).
+
+
+<table>
+    <tr>
+        <td align="center">
+            <a href="https://www.linkedin.com/in/hardik-goel-a6334936/">
+                <img src="https://github.com/hardik-goel.png" width="100" alt="Username1">
+                <br />
+                <sub><b>Hardik Goel</b></sub>
+            </a>
+        </td>
+    </tr>
+</table>
+
+
+####Feel free to contribute or report issues!
 
 https://www.buymeacoffee.com/hardikgoel
