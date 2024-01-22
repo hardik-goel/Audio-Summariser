@@ -152,6 +152,6 @@ Use :
 </table>
 
 
-####Feel free to contribute or report issues!
+Feel free to contribute or report issues!
 
 https://www.buymeacoffee.com/hardikgoel
