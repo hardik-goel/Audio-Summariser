@@ -98,7 +98,7 @@ https://pypi.org/project/AudioSummariser/
    ```
    
 6. **Prepare Data:**
-    Place your .wav/.mp3 files under `data/` folder.
+    Place your .wav files under `data/` folder.
     Please ensure that no other file is kept under `data/` folder.
    
 
@@ -111,7 +111,7 @@ https://pypi.org/project/AudioSummariser/
    
     - OpenAI's whisper for Audio to Text Conversion
     - Gemini-Pro for Text Summarisation.
-      [Tried GPT, Bart-cnn, bart-base but the accuracy received is most in gemini-pro]
+      [Tried GPT-3.5, Bart-large-cnn, bart-base but the accuracy received is most in gemini-pro]
 
 
 ## Screenshots
