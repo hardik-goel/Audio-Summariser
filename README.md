@@ -22,6 +22,11 @@ You can also find at :
 
 https://pypi.org/project/AudioSummariser/
 
+## Architecture (Revised)
+
+<img width="893" alt="Screenshot 2024-07-05 at 4 12 10 PM" src="https://github.com/hardik-goel/Audio-Summariser/assets/21021414/43932550-7345-46a9-b33d-a5bf9f706168">
+
+### Revised Code TODO
 ## Features
 
 1. **Text Summarization:** Quickly generates a summarized text from audio files, enabling faster Call-to-Action (CTA) and issue resolution.
