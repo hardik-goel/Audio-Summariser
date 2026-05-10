@@ -43,6 +43,23 @@ https://pypi.org/project/AudioSummariser/
 
 7. **Overall Sentiment Pie Chart:** Represents the overall sentiment distribution of the conversation in the form of a pie chart.
 
+8. Vector DB and RAG usage will be part of the next phase where we will be developing Multi-call customer support intelligence and Enterprise knowledge-grounded summarization. Right now in TBD
+
+```
+1. Multi-call customer support intelligence
+Example:
+
+“Show me all previous complaints from this customer”
+“Compare this call with last 5 escalations”
+“Retrieve similar complaint resolutions”
+
+2. Enterprise knowledge-grounded summarization
+Example:
+
+“Summarize this call according to company refund policy”
+“Detect SLA violations”
+“Suggest resolution from knowledge base”
+```
 
 ## How It Works
 
